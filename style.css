@@ -1,0 +1,4 @@
+.statescontainer {
+    display: flex;
+    flex-wrap: wrap;
+}
