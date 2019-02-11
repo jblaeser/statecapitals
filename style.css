@@ -1,4 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #154e6f;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    letter-spacing: .03em;
+}
+
 .statescontainer {
-    display: flex;
-    flex-wrap: wrap;
+    max-width: 55em;
+    margin: 0 auto;
+} 
+
+.state {
+    background-color: #fff;
+    color: #ad1322;
+    min-width: 15em;
+    float: left;
+    margin: 1.5em;
+    height: 15em;
+    border: .25em dotted #ad1322;
+    border-radius: 12%;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+.state:hover {
+    border: .25em solid #ad1322;
 }
