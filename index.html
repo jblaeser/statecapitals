@@ -3,38 +3,66 @@
     <head>
         <link rel="stylesheet" href="style.css">
         <meta charset="utf-8">
-        <title>State Capitals</title>
+        <title>Javascript Geography</title>
     </head>
     <body>
         <h1>Ms. Jenkins' Javascript Geography</h1>
         <h2>Hover Over Each State to Learn Its Capital!</h2>
 
         <div class="statescontainer">
-            <div id="Alabama" class="state">
+            <div class="state">
                 <h3>Alabama</h3>
-                <img src="images/alabama.jpeg" alt="The State of Alabama">
+                <img id="Alabama" src="images/alabama.jpeg" alt="The State of Alabama">
             </div>
-            <div id="Alaska" class="state">
+            <div class="state">
                 <h3>Alaska</h3>
-                <img src="images/alaska.jpeg" alt="The State of Alaska">
+                <img id="Alaska" src="images/alaska.jpeg" alt="The State of Alaska">
             </div>
-            <div id="Arizona" class="state">
+            <div class="state">
                 <h3>Arizona</h3>
-                <img src="images/arizona.jpeg" alt="The State of Arizona">
+                <img id="Arizona" src="images/arizona.jpeg" alt="The State of Arizona">
             </div>
-            <div id="Arkansas" class="state">
+            <div class="state">
                 <h3>Arkansas</h3>
-                <img src="images/arkansas.jpeg" alt="The State of Arkansas">
+                <img id="Arkansas" src="images/arkansas.jpeg" alt="The State of Arkansas">
             </div>
-            <div id="California" class="state">
+            <div class="state">
                 <h3>California</h3>
-                <img src="images/california.jpeg" alt="The State of California">
+                <img id="California" src="images/california.jpeg" alt="The State of California">
             </div>
-            <div id="Colorado" class="state">
+            <div class="state">
                 <h3>Colorado</h3>
-                <img src="images/colorado.jpg" alt="The State of Colorado">
+                <img id="Colorado" src="images/colorado.jpg" alt="The State of Colorado">
             </div>
         </div>
         
+        <script>
+            function alabamaAlert() {
+                alert ("Montgomery");
+            }
+            function alaskaAlert() {
+                alert ("Juneau");
+            }
+            function arizonaAlert() {
+                alert ("Phoenix");
+            }
+            function arkansasAlert() {
+                alert ("Little Rock");
+            }
+            function californiaAlert() {
+                alert ("Sacramento");
+            }
+            function coloradoAlert() {
+                alert ("Denver");
+            }
+
+            document.getElementById("Alabama").addEventListener("mouseover", alabamaAlert);
+            document.getElementById("Alaska").addEventListener("mouseover", alaskaAlert);
+            document.getElementById("Arizona").addEventListener("mouseover", arizonaAlert);
+            document.getElementById("Arkansas").addEventListener("mouseover", arkansasAlert);
+            document.getElementById("California").addEventListener("mouseover", californiaAlert);
+            document.getElementById("Colorado").addEventListener("mouseover", coloradoAlert);
+        
+        </script>
     </body>
 </html>
